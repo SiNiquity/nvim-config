@@ -2,6 +2,9 @@
 -- This must be done first since some plugins pick up their defaults from vim
 require('opts')
 
+-- Global variables
+require('vars')
+
 -- This file defines new keymappings. Some of these may depend on plugins
 require('keymaps')
 

@@ -12,6 +12,7 @@ return require('packer').startup(function(use)
     use 'neovim/nvim-lspconfig'
 
     -- Rust
+    use 'rust-lang/rust.vim'
     use 'simrat39/rust-tools.nvim'
 
     -- Completion framework:
