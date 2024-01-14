@@ -6,6 +6,8 @@ return {
         ft = { 'rust' },
         keys = {
             { "<leader>c", "<cmd>RustLsp openCargo<cr>", desc = "Open Cargo.toml" },
+            { "<leader>a", "<cmd>RustLsp codeAction<cr>", desc = "Open code actions" },
+            { "<leader>J", "<cmd>RustLsp joinLines<cr>", desc = "Smart join lines" },
         },
         config = function()
             vim.g.rustaceanvim = {
