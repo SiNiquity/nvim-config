@@ -5,14 +5,11 @@ require('opts')
 -- Global variables
 require('vars')
 
--- This file defines new keymappings. Some of these may depend on plugins
+-- Keymaps
 require('keymaps')
 
--- Theme
-require("github-theme").setup({
-  theme_style = "dark_default",
-  -- other config
-})
+-- Install plugin manager
+require('lazy-setup')
 
 -- LSP Diagnostics Options Setup 
 local sign = function(opts)
