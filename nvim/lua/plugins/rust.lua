@@ -2,7 +2,7 @@ return {
     { 'rust-lang/rust.vim' },
     { 
         'mrcjkb/rustaceanvim',
-        version = '^3',
+        version = '^4',
         ft = { 'rust' },
         keys = {
             { "<leader>c", "<cmd>RustLsp openCargo<cr>", desc = "Open Cargo.toml" },
