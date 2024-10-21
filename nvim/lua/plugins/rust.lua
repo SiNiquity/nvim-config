@@ -2,7 +2,7 @@ return {
     { 'rust-lang/rust.vim' },
     { 
         'mrcjkb/rustaceanvim',
-        version = '^4',
+        version = '^5',
         ft = { 'rust' },
         keys = {
             { "<leader>c", "<cmd>RustLsp openCargo<cr>", desc = "Open Cargo.toml" },
@@ -14,7 +14,7 @@ return {
                 server = {
                     on_attach = function(client, buffer)
                         if client.server_capabilities.inlayHintProvider then
-                            vim.lsp.inlay_hint.enable(buffer, true)
+                            vim.lsp.inlay_hint.enable(true, { bufnr = buffer })
                         end
                     end,
                 },
